@@ -21,9 +21,9 @@
   }
   &__list-link {
     color: $title;
-    padding-bottom: 1px;
+    padding: 0 2px 1px;
     transition: all .3s;
-    @extend %roboto-700;
+    @extend %roboto-400;
     &:hover {
       color: $accent;
       border-bottom: 1px solid $accent;
@@ -31,6 +31,7 @@
   }
   &__list-link--active {
     color: $accent;
+    @extend %roboto-700;
     border-bottom: 1px solid $accent;
   }
 }
