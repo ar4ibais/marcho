@@ -157,6 +157,18 @@ footer {
   }
 }
 
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider {
   background-image: url(../images/decor/top-slider-bg.png);
   background-repeat: no-repeat;
@@ -643,15 +655,53 @@ footer {
   }
 }
 
-.BG {
-  background-color: rgb(255, 255, 255);
-  
-  position: absolute;
-  left: 375px;
-  top: 5688px;
-  width: 370px;
-  height: 478px;
-  z-index: 115;
+.modal {
+  max-width: 570px;
+  margin: 0 auto 115px;
+  padding-top: 100px;
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__link {
+    font-size: 22px;
+    color: #909090;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+  &__link--active {
+    color: $accent;
+  }
+  &__label {
+    margin-bottom: 30px;
+    display: block;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__btn {
+    background-color: $title;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    padding: 14px 0;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+  }
+  &__error {
+    color: $accent;
+    margin-top: 12px;
+    display: block;
+  }
 }
 
 
