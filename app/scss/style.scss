@@ -700,7 +700,43 @@ footer {
   &__error {
     color: $accent;
     margin-top: 12px;
-    display: block;
+    display: inline-block;
+  }
+  &__text {
+    margin-bottom: 25px;
+  }
+}
+
+.page-404 {
+  padding: 110px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #28384f;
+    margin-bottom: 20px;
+    @extend %roboto-700;
+    margin-bottom: 40px;
+  }
+  &__text {
+    margin-bottom: 55px;
+    max-width: 470px;
+  }
+  &__link {
+    background-color: $accent;
+    font-size: 16px;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    @extend %roboto-400;
+    color: #fff;
   }
 }
 
