@@ -33,6 +33,15 @@ $title: #29282d;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, .3)
 }
 
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
