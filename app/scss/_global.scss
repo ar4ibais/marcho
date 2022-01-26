@@ -41,6 +41,7 @@ body {
 
 .breadcrumbs {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-left: 25px;
   position: relative;
@@ -124,5 +125,19 @@ body {
       top: 8px;
       right: 0;
     }
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
